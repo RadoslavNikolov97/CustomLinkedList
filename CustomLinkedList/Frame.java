@@ -10,6 +10,7 @@ public class Frame extends JFrame implements ActionListener {
     JButton submit;
     JTextField indexField;
     JLabel resultField;
+    LinkedList list = new LinkedList();
 
     public Frame() {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -40,7 +41,7 @@ public class Frame extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e)  {
         if (e.getSource() == submit) {
-            LinkedList list = new LinkedList();
+          
 
             String[] input = inputField.getText().split(" -> ");
 
